@@ -15,6 +15,7 @@ const config = {
 			colors: {
 				gray: colors.neutral,
 				brand: {
+					light: colors.cyan['500'],
 					DEFAULT: colors.cyan['600'],
 				},
 			},

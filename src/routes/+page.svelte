@@ -34,8 +34,8 @@
 </p>
 
 <div class="mt-4 flex gap-4">
-	<button class="btn btn-brand btn-outline">Generate key pairs</button>
-	<a class="btn btn-brand btn-outline" href="/">Look around</a>
+	<button class="btn btn-brand btn-outline">Generate</button>
+	<a class="btn btn-gray btn-outline" href="/">Look around</a>
 </div>
 
 <div class="mt-4">
