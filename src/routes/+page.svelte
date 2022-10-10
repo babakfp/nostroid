@@ -19,12 +19,12 @@
 <div class="mt-4 grid gap-4 p-6 text-sm border border-dashed border-gray-700 rounded">
 	<div class="space-y-1">
 		<h2 class="font-semibold">PUBLIC KEY</h2>
-		<p class="text-gray-400 text-xs">A publicly known unique ID, associated with your user on the Nostr network. Can be shared freely. Others can see your posts or follow you using only your public key.</p>
+		<p class="text-gray-400 text-xs sm:text-sm">A publicly known unique ID, associated with your user on the Nostr network. Can be shared freely. Others can see your posts or follow you using only your public key.</p>
 	</div>
 
 	<div class="space-y-1">
 		<h2 class="font-semibold">PRIVATE KEY</h2>
-		<p class="text-gray-400 text-xs">A secret key is used to sign for (or unlock) your public key. All content from your user public key will need a signature derived from your private key before being relayed. If a lousy actor discovers your private key they can impersonate you on Nostr network.</p>
+		<p class="text-gray-400 text-xs sm:text-sm">A secret key is used to sign for (or unlock) your public key. All content from your user public key will need a signature derived from your private key before being relayed. If a lousy actor discovers your private key they can impersonate you on Nostr network.</p>
 	</div>
 </div>
 
