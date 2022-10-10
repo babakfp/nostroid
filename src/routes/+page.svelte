@@ -83,7 +83,7 @@
 	}
 	:global(.key-tab::after) {
 		content: "";
-		@apply hide absolute !top-full inset-x-center translate-y-0.5 duration-150 ease-in-out;
+		@apply hide absolute top-full inset-x-center translate-y-0.5 duration-150 ease-in-out;
 		border-style: solid;
 		border-width: 4px 4px 0 4px;
 		border-color: theme(colors.gray.700) transparent transparent transparent;
