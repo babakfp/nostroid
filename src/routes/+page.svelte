@@ -86,10 +86,10 @@
 		@apply hide absolute !top-full inset-x-center translate-y-0.5 duration-150 ease-in-out;
 		border-style: solid;
 		border-width: 4px 4px 0 4px;
-		border-color: theme(colors.brand.DEFAULT) transparent transparent transparent;
+		border-color: theme(colors.gray.700) transparent transparent transparent;
 	}
 	:global(.key-tab[aria-selected="true"]) {
-		@apply bg-brand relative;
+		@apply bg-gray-700;
 	}
 	:global(.key-tab[aria-selected="true"]::after) {
 		@apply show;
