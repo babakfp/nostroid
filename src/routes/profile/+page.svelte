@@ -13,10 +13,10 @@
 <div class="relative flex items-end justify-between gap-4">
 	<div class="w-20 min-w-20 bg-gray-900 rounded-full">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img class="border-3 border-transparent rounded-full" src="https://pbs.twimg.com/profile_images/1557379074322046978/nopS1woe_200x200.png" alt="Your profile image" />
+		<img class="border-3 border-transparent rounded-full aspect-square" src="https://pbs.twimg.com/profile_images/1557379074322046978/nopS1woe_200x200.png" alt="Your profile image" />
 	</div>
 	
-	<a class="mt-4 btn btn-gray btn-outline rounded-full" href="/">Edit profile</a>
+	<a class="mt-4 btn btn-gray btn-outline rounded-full text-xs h-8 px-3" href="/">Edit profile</a>
 </div>
 
 <h1 class="mt-4 font-semibold text-white text-lg">Liam Smith</h1>
