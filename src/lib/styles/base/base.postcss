@@ -1,6 +1,8 @@
 @layer base
 {
-	* { @apply !outline-none select-none drag-none }
+	* { @apply !outline-none select-none drag-none;
+		-webkit-tap-highlight-color: transparent;
+	}
 	html { @apply font-base }
 	body { @apply bg-gray-900 text-gray-300 }
 	a { @apply duration-150 }
