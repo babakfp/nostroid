@@ -72,7 +72,7 @@
 			</button>
 		</label>
 
-		<p class="text-gray-400 text-xs leading-5">
+		<p class="text-gray-50/60 text-xs leading-5">
 			{#if keyType === 'public-key'}
 				<p class="mt-2">Entering a public key means you will need to enter a private key each time you post content (either manually or by Nostr browser extension).</p>
 			{:else}
