@@ -12,12 +12,12 @@
 		{
 			label: 'PUBLIC KEY',
 			value: 'public-key',
-			description: 'Entering a public key means you will need to enter a private key each time you post content (either manually or by Nostr browser extension).',
+			description: 'A publicly known unique ID, associated with your user on the Nostr network. Can be shared freely. Others can see your posts or follow you using only your public key.',
 		},
 		{
 			label: 'PRIVATE KEY',
 			value: 'private-key',
-			description: 'Entering a private key means Nostroid will automatically sign with your private key each time you post content.',
+			description: 'A secret key is used to sign for (or unlock) your public key. All content from your user public key will need a signature derived from your private key before being relayed. If a lousy actor discovers your private key they can impersonate you on Nostr network.',
 		},
 	]
 </script>
@@ -29,18 +29,6 @@
 	Nostroid is powered by <a class="link" href="https://github.com/fiatjaf/nostr" target="_blank">The Nostr Protocol</a>.
 	In order to participate in The Nostr Network, you will need to have PUBLIC and PRIVATE key pairs.
 </p>
-
-<div class="mt-4 grid gap-6 p-6 text-sm border border-dashed border-gray-700 rounded">
-	<div class="space-y-1">
-		<h2 class="font-semibold">PUBLIC KEY</h2>
-		<p class="text-gray-400 text-xs sm:text-sm">A publicly known unique ID, associated with your user on the Nostr network. Can be shared freely. Others can see your posts or follow you using only your public key.</p>
-	</div>
-
-	<div class="space-y-1">
-		<h2 class="font-semibold">PRIVATE KEY</h2>
-		<p class="text-gray-400 text-xs sm:text-sm">A secret key is used to sign for (or unlock) your public key. All content from your user public key will need a signature derived from your private key before being relayed. If a lousy actor discovers your private key they can impersonate you on Nostr network.</p>
-	</div>
-</div>
 
 <p class="mt-6">
 	If you don't have a Nostr key pair, you can either 
@@ -55,7 +43,7 @@
 				<div class="h-full p-4 border-2 border-gray-800 rounded flex justify-between gap-4 duration-150 cursor-pointer {checked && 'bg-gray-800 border-transparent shadow-[0_0_4px_theme(colors.gray.600)]'}">
 					<div class="space-y-2">
 						<RadioGroupLabel>{option.label}</RadioGroupLabel>
-						<RadioGroupDescription class="text-gray-400 text-xs">{option.description}</RadioGroupDescription>
+						<RadioGroupDescription class="text-gray-400 text-xs leading-5">{option.description}</RadioGroupDescription>
 					</div>
 					<div class="flex items-center justify-center w-6 min-w-6 h-6 border-2 border-gray-800 rounded-full duration-150 {checked && 'bg-gray-900 border-gray-900'}">
 						<svg class="w-3 h-3 scale-0 duration-150 {checked && 'scale-100'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -81,4 +69,12 @@
 			</svg>
 		</button>
 	</label>
+
+	<p class="text-gray-400 text-xs leading-5">
+		{#if keyType === 'public-key'}
+			<p class="mt-2">Entering a public key means you will need to enter a private key each time you post content (either manually or by Nostr browser extension).</p>
+		{:else}
+			<p class="mt-2">Entering a private key means Nostroid will automatically sign with your private key each time you post content.</p>
+		{/if}
+	</p>
 </form>
