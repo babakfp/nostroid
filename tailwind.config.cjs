@@ -40,6 +40,7 @@ const config = {
     },
   },
   plugins: [
+		require('@tailwindcss/line-clamp'),
 		...customAddons,
 		addons.base,
 		addons.utilities.dir,
