@@ -20,6 +20,8 @@
 			description: 'A secret key is used to sign for (or unlock) your public key. All content from your user public key will need a signature derived from your private key before being relayed. If a lousy actor discovers your private key they can impersonate you on Nostr network.',
 		},
 	]
+
+	let keyCodeError = false
 </script>
 
 <div class="max-w-screen-md mx-auto">
@@ -63,14 +65,21 @@
 			</svg>
 		</button>
 
-		<label class="mt-2 flex items-center pr-2 border-2 border-gray-800 rounded" for>
-			<input class="w-full h-14 px-4 bg-transparent text-sm font-code placeholder:text-gray-600 placeholder:font-base" type="text" placeholder="Enter your {keyType.toUpperCase().replace('-', ' ')}" />
+		<div class="mt-2 relative flex items-center pr-2 border-2 border-gray-800 rounded" for>
+			<label class="absolute inset-0" for="key-code"></label>
+			<input class="w-full h-14 px-4 bg-transparent text-sm font-code placeholder:text-gray-600 placeholder:font-base" type="text" id="key-code" placeholder="Enter your {keyType.toUpperCase().replace('-', ' ')}" />
 			<button class="btn btn-brand text-xs">PROCESS
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
 				</svg>
 			</button>
-		</label>
+		</div>
+
+		{#if keyCodeError}
+			<p class="mt-1 text-red-700 text-xs leading-5">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, rerum.
+			</p>
+		{/if}
 
 		<p class="text-gray-50/60 text-xs leading-5">
 			{#if keyType === 'public-key'}
