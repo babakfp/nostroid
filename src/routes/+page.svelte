@@ -39,13 +39,13 @@
 
 	<RadioGroup class="grid gap-2 text-sm sm:grid-cols-2 sm:gap-4" value={keyType} on:change={(e) => keyType = e.detail}>
 		{#each keyTypeOptions as option}
-			<RadioGroupOption value={option.value} let:checked>
-				<div class="h-full p-4 border-2 border-gray-800 rounded flex justify-between gap-4 duration-150 cursor-pointer {checked && 'bg-gray-800 border-transparent shadow-[0_0_4px_theme(colors.gray.600)]'}">
+			<RadioGroupOption class="duration-150 ease-in-ou origin-bottom active:scale-y-95" value={option.value} let:checked>
+				<div class="h-full p-4 border-2 border-gray-800 rounded flex justify-between gap-4 duration-150 cursor-pointer {checked && 'bg-brand/50 border-transparent'}">
 					<div class="space-y-2">
 						<RadioGroupLabel>{option.label}</RadioGroupLabel>
-						<RadioGroupDescription class="text-gray-400 text-xs leading-5">{option.description}</RadioGroupDescription>
+						<RadioGroupDescription class="text-gray-50/60 text-xs leading-5">{option.description}</RadioGroupDescription>
 					</div>
-					<div class="flex items-center justify-center w-6 min-w-6 h-6 border-2 border-gray-800 rounded-full duration-150 {checked && 'bg-gray-900 border-gray-900'}">
+					<div class="flex items-center justify-center w-6 min-w-6 h-6 border-2 border-gray-800 rounded-full duration-150 {checked && 'bg-white/10 border-transparent'}">
 						<svg class="w-3 h-3 scale-0 duration-150 {checked && 'scale-100'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
 						</svg>
