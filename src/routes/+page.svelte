@@ -48,7 +48,7 @@
 						<div class="flex items-center justify-between">
 							<RadioGroupLabel>{option.label}</RadioGroupLabel>
 							<div class="flex items-center justify-center w-6 min-w-6 h-6 border-2 border-gray-800 rounded-full duration-150 {checked && 'bg-white/10 border-transparent'}">
-								<svg class="w-3 h-3 scale-0 duration-150 {checked && 'scale-100'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<svg class="w-3 h-3 scale-0 duration-200 {checked && 'scale-100'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
 								</svg>
 							</div>
