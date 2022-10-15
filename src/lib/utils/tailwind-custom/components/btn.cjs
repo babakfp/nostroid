@@ -5,7 +5,7 @@ module.exports = plugin(({ addComponents }) => {
 		'.btn-base': {
 			'@apply h-input inline-flex items-center justify-center gap-3': {},
 			'@apply border-2 border-transparent rounded': {},
-			'@apply duration-150 ease-in': {},
+			'@apply duration-150 ease-in-out': {},
 			'@apply whitespace-nowrap select-none text-sm': {},
 		},
 		'.btn': {
