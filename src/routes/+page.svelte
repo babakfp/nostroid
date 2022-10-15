@@ -43,7 +43,7 @@
 
 		<RadioGroup class="grid gap-2 text-sm sm:grid-cols-2 sm:gap-4" value={keyType} on:change={(e) => keyType = e.detail}>
 			{#each keyTypeOptions as option}
-				<RadioGroupOption class="duration-150 ease-in-ou origin-bottom active:scale-y-95" value={option.value} let:checked>
+				<RadioGroupOption class="duration-150 ease-in-out origin-bottom active:scale-y-95" value={option.value} let:checked>
 					<div class="h-full p-4 space-y-2 border-2 border-gray-800 rounded duration-150 cursor-pointer {checked && 'bg-brand/50 border-transparent'}">
 						<div class="flex items-center justify-between">
 							<RadioGroupLabel>{option.label}</RadioGroupLabel>
