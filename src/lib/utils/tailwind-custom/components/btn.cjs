@@ -2,14 +2,11 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(({ addComponents }) => {
 	addComponents({
-		'.btn-base': {
-			'@apply h-input inline-flex items-center justify-center gap-3': {},
+		'.btn': {
+			'@apply h-input px-4 inline-flex items-center justify-center gap-3': {},
 			'@apply border-2 border-transparent rounded': {},
 			'@apply duration-150 ease-in-out': {},
 			'@apply whitespace-nowrap select-none text-sm': {},
-		},
-		'.btn': {
-			'@apply btn-base px-4': {},
 			'@apply active:scale-y-90 origin-bottom': {},
 		},
 
