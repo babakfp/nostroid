@@ -1,5 +1,6 @@
 <script>
   import '$styles/app.postcss'
+	import CreateTweetFloatingButton from '$parts/CreateTweetFloatingButton.svelte'
 	import MobileBottomNav from '$parts/MobileBottomNav/Index.svelte'
 
 </script>
@@ -8,4 +9,5 @@
 	<slot />
 </main>
 
+<CreateTweetFloatingButton />
 <MobileBottomNav />
